@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Helene Mogoum, software developer for industrial and energy systems: Python, JavaScript, Modbus TCP/IP, OPC UA, real-time supervision and data.">
+<meta name="description" content="Helene Mogoum, software developer for industrial and energy systems: Python, JavaScript, Modbus TCP/IP, OPC UA, Beckhoff TwinCAT PLC, real-time supervision and data.">
 <meta property="og:title" content="Helene Mogoum Portfolio">
-<meta property="og:description" content="Software developer, industrial and energy systems. Supervision platforms, solar data dashboards and battery test software.">
+<meta property="og:description" content="Software developer, industrial and energy systems. Supervision platforms, solar data dashboards, battery test software and PLC work.">
 <meta property="og:image" content="eau-process.jpg">
 <style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Helene Mogoum Portfolio</title>
@@ -190,6 +190,7 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
         <div>Professional experience</div><b>4+ yrs</b>
         <div>Industrial apps shipped</div><b>3</b>
         <div>Protocols</div><b>Modbus · OPC UA</b>
+        <div>PLC</div><b>TwinCAT 3 · ST</b>
         <div>Degree</div><b>M.S. CS Eng.</b>
         <div>Core stack</div><b>Python · JS · Node</b>
         <div>Languages</div><b>FR · EN</b>
@@ -201,10 +202,10 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
     <div class="tag">About</div>
     <div class="body">
       <p>My work usually starts with raw technical data. I connect to a machine or a remote server, collect and clean what it sends, store it in the right database, and then build an interface that lets a person understand it and act on it quickly.</p>
-      <p>At Sylfen, a French clean-energy company, I worked across the whole path: planning meetings, Visio wireframes, Node.js and Python code, integration testing, deployment, operator training and ongoing maintenance. That gave me a habit I bring to every project: build for the person who will use the screen every day.</p>
+      <p>At Sylfen, a French clean-energy company, I worked across the whole path: planning meetings, Visio wireframes, Node.js and Python code, integration testing, deployment, operator training and ongoing maintenance. I also worked on the PLC side in Beckhoff TwinCAT 3, managing the tags that connect the equipment to the software. That gave me a habit I bring to every project: build for the person who will use the screen every day.</p>
       <p>I now live in Illinois and I am looking for my next role in industrial automation, energy, or IIoT software, where my work connects real equipment to the people who operate it.</p>
       <div class="focus">
-        <span class="chip">Supervision / SCADA interfaces</span><span class="chip">Modbus TCP/IP</span><span class="chip">OPC UA</span><span class="chip">Real-time data</span><span class="chip">Time-series databases</span><span class="chip">Energy systems</span>
+        <span class="chip">Supervision / SCADA interfaces</span><span class="chip">Beckhoff TwinCAT 3 PLC</span><span class="chip">Modbus TCP/IP</span><span class="chip">OPC UA</span><span class="chip">Real-time data</span><span class="chip">Time-series databases</span><span class="chip">Energy systems</span>
       </div>
     </div>
   </section>
@@ -214,7 +215,7 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
       <div class="tag">Selected work</div>
       <div>
         <h2>Software that connects equipment to operators</h2>
-        <p>Three industrial systems I built at Sylfen, plus one personal web project. Screenshots are from the original projects.</p>
+        <p>Three industrial systems I built at Sylfen, my PLC and instrumentation work, plus one personal web project. Screenshots are from the original projects.</p>
       </div>
     </div>
 
@@ -340,6 +341,41 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
       <div class="stack"><span>Python</span><span>Modbus TCP/IP</span><span>Socket.io</span><span>PostgreSQL</span><span>Jupyter</span><span>Git</span></div>
     </article>
 
+    <!-- Project 4 -->
+    <article class="project">
+      <div class="p-top">
+        <div>
+          <div class="tag">SYL-PLC · PLC &amp; instrumentation</div>
+          <h3>PLC Tags &amp; Instrumentation</h3>
+        </div>
+        <div class="p-meta">Sylfen, France<br>2022 – 2024</div>
+      </div>
+      <p class="p-sum">The link between the field equipment and the software: PLC variables in Beckhoff TwinCAT 3 and the database that maps every signal to its code.</p>
+      <div class="p-body">
+        <div>
+          <h4>PLC programming</h4>
+          <ul>
+            <li>Worked in Beckhoff TwinCAT 3 with Structured Text (IEC 61131-3).</li>
+            <li>Added, modified and removed PLC tags and global variables (GVL).</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Instrumentation</h4>
+          <ul>
+            <li>Maintained the instrumentation database linking equipment signals to PLC code.</li>
+            <li>Checked tag states during monitoring and testing.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Communication tests</h4>
+          <ul>
+            <li>Tested device communication over Modbus with Ultimate Modbus and pyModSlave.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack"><span>Beckhoff TwinCAT 3</span><span>Structured Text</span><span>IEC 61131-3</span><span>GVL</span><span>Modbus</span><span>Ultimate Modbus</span><span>pyModSlave</span></div>
+    </article>
+
     <div class="single">
       <article class="project">
         <div class="p-top">
@@ -373,12 +409,12 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
       <div><h2>Technical skills</h2><p>Tools I have used in production on industrial projects.</p></div>
     </div>
     <div class="skills">
-      <div><h3>Industrial communication</h3><ul><li>Modbus TCP/IP (registers)</li><li>OPC UA</li><li>Data acquisition from remote servers</li><li>Real-time streaming (Socket.io)</li></ul></div>
+      <div><h3>PLC &amp; automation</h3><ul><li>Beckhoff TwinCAT 3</li><li>Structured Text (IEC 61131-3)</li><li>PLC tags &amp; global variables (GVL)</li><li>Instrumentation database</li></ul></div>
+      <div><h3>Industrial communication</h3><ul><li>Modbus TCP/IP (registers)</li><li>OPC UA</li><li>Ultimate Modbus · pyModSlave</li><li>Real-time streaming (Socket.io)</li></ul></div>
       <div><h3>Programming</h3><ul><li>Python</li><li>JavaScript (ES6+)</li><li>SQL · PHP</li><li>HTML5 · CSS3</li></ul></div>
       <div><h3>Supervision &amp; HMI</h3><ul><li>Process diagrams &amp; live values</li><li>Alarms &amp; thresholds</li><li>Visio wireframes</li><li>EJS · Bootstrap</li></ul></div>
-      <div><h3>Data</h3><ul><li>pandas · Jupyter</li><li>Streamlit · Matplotlib</li><li>Data cleaning &amp; validation</li></ul></div>
-      <div><h3>Back-end &amp; databases</h3><ul><li>Node.js · Express</li><li>InfluxDB (time series)</li><li>PostgreSQL · MySQL</li><li>REST APIs · Postman</li></ul></div>
-      <div><h3>Workflow</h3><ul><li>Git · GitLab · GitHub</li><li>Agile · Jira · Notion</li><li>VS Code</li><li>Linux · Windows</li></ul></div>
+      <div><h3>Data &amp; databases</h3><ul><li>pandas · Jupyter · Streamlit</li><li>InfluxDB (time series)</li><li>PostgreSQL · MySQL</li><li>Data cleaning &amp; validation</li></ul></div>
+      <div><h3>Back-end &amp; workflow</h3><ul><li>Node.js · Express · REST APIs</li><li>Git · GitLab · GitHub</li><li>Agile · Jira · Notion</li><li>Linux · Windows · VS Code</li></ul></div>
     </div>
   </section>
 
@@ -391,7 +427,7 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
       <li>
         <div class="when">2022 – 2024</div>
         <div><h3>Software Developer</h3><div class="org">Sylfen · France</div>
-        <p>Built the solar monitoring dashboard and the battery test software in Python, and kept maintaining the supervision platform.</p></div>
+        <p>Built the solar monitoring dashboard and the battery test software in Python, worked on PLC tags in Beckhoff TwinCAT 3, maintained the instrumentation database, and kept maintaining the supervision platform.</p></div>
       </li>
       <li>
         <div class="when">Oct 2020 – 2022</div>
