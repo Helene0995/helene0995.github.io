@@ -1,13 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Helene Mogoum, software developer for industrial and energy systems: Python, JavaScript, Modbus TCP/IP, OPC UA, Beckhoff TwinCAT PLC, real-time supervision and data.">
-<meta property="og:title" content="Helene Mogoum Portfolio">
-<meta property="og:description" content="Software developer, industrial and energy systems. Supervision platforms, solar data dashboards, battery test software and PLC work.">
-<meta property="og:image" content="eau-process.jpg">
-<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Helene Mogoum Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,9 +72,12 @@ section{padding-block:64px;border-top:1px solid var(--line)}
 
 /* project sheets */
 .project{background:var(--sheet);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:28px}
+.project.current{border:1.5px solid var(--signal)}
 .p-top{display:grid;grid-template-columns:1fr auto;gap:12px 24px;padding:28px 28px 0;align-items:start}
 .p-top h3{font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.1;margin-top:10px}
 .p-meta{font:400 13px var(--mono);color:var(--muted);text-align:right;white-space:nowrap}
+.badge{display:inline-flex;align-items:center;gap:7px;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:color-mix(in srgb,var(--live) 22%,transparent);padding:5px 9px;border-radius:4px;margin-top:8px}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--live);animation:pulse 2.4s infinite}
 .p-sum{padding:14px 28px 0;font-size:17px;color:var(--muted)}
 .p-body{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:26px 28px}
 .p-body > div{min-width:0}
@@ -156,9 +149,6 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
-</head>
-<body>
-
 
 <nav><div class="wrap">
   <a class="mark" href="#top"><i aria-hidden="true"></i>Helene Mogoum</a>
@@ -173,9 +163,9 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
 <main class="wrap" id="top">
   <header class="hero">
     <div>
-      <div class="tag">Software Developer · Industrial &amp; Energy Systems · Yorkville, IL</div>
-      <h1>I build the screens people use to <span>run real systems.</span></h1>
-      <p class="lede">Four years developing web applications for an energy-technology company in France: live supervision interfaces for industrial operators, data pipelines from field equipment, and dashboards that make the numbers readable. I write in Python and JavaScript, and I speak Modbus TCP/IP and OPC UA.</p>
+      <div class="tag">Full-Stack Web Developer · Yorkville, IL</div>
+      <h1>I love building <span>web apps people use every day.</span></h1>
+      <p class="lede">Four years building web applications end to end: real-time interfaces in Node.js and Socket.io, REST back-ends, PostgreSQL databases and data dashboards. Today I am building a complete e-commerce platform with Next.js, React, TypeScript and Stripe.</p>
       <div class="cta">
         <a class="btn primary" href="#work">See my work</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/helenemogoum9" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -188,11 +178,12 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
       </div>
       <div class="readout">
         <div>Professional experience</div><b>4+ yrs</b>
-        <div>Industrial apps shipped</div><b>3</b>
-        <div>Protocols</div><b>Modbus · OPC UA</b>
-        <div>PLC</div><b>TwinCAT 3 · ST</b>
+        <div>Current project</div><b>E-commerce · Next.js</b>
+        <div>Front-end</div><b>React · TypeScript</b>
+        <div>Back-end</div><b>Node.js · Express</b>
+        <div>Databases</div><b>PostgreSQL · MySQL</b>
+        <div>Real-time</div><b>Socket.io</b>
         <div>Degree</div><b>M.S. CS Eng.</b>
-        <div>Core stack</div><b>Python · JS · Node</b>
         <div>Languages</div><b>FR · EN</b>
       </div>
     </aside>
@@ -201,11 +192,11 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
   <section id="about" class="about">
     <div class="tag">About</div>
     <div class="body">
-      <p>My work usually starts with raw technical data. I connect to a machine or a remote server, collect and clean what it sends, store it in the right database, and then build an interface that lets a person understand it and act on it quickly.</p>
-      <p>At Sylfen, a French clean-energy company, I worked across the whole path: planning meetings, Visio wireframes, Node.js and Python code, integration testing, deployment, operator training and ongoing maintenance. I also worked on the PLC side in Beckhoff TwinCAT 3, managing the tags that connect the equipment to the software. That gave me a habit I bring to every project: build for the person who will use the screen every day.</p>
-      <p>I now live in Illinois and I am looking for my next role in industrial automation, energy, or IIoT software, where my work connects real equipment to the people who operate it.</p>
+      <p>What I enjoy most is the moment a screen becomes useful: the page loads fast, the data is right, and the person using it knows exactly what to do. I like working on the whole path to get there, from the database and the API to the interface.</p>
+      <p>At Sylfen, a French clean-energy company, I built web applications from first wireframe to production: planning meetings, screen design, Node.js and Express back-ends, real-time views with Socket.io, PostgreSQL databases, integration tests, deployment, user training and maintenance. That gave me a habit I bring to every project: build for the person who will use the screen every day.</p>
+      <p>I now live in Illinois. I am building the e-commerce platform for Mokeh LLC with Next.js, React and TypeScript, and I am looking for my next full-stack web developer role.</p>
       <div class="focus">
-        <span class="chip">Supervision / SCADA interfaces</span><span class="chip">Beckhoff TwinCAT 3 PLC</span><span class="chip">Modbus TCP/IP</span><span class="chip">OPC UA</span><span class="chip">Real-time data</span><span class="chip">Time-series databases</span><span class="chip">Energy systems</span>
+        <span class="chip">React · Next.js</span><span class="chip">TypeScript</span><span class="chip">Node.js · Express</span><span class="chip">REST APIs</span><span class="chip">PostgreSQL</span><span class="chip">Real-time with Socket.io</span><span class="chip">Stripe payments</span><span class="chip">Responsive UI</span>
       </div>
     </div>
   </section>
@@ -214,55 +205,130 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
     <div class="sec-head">
       <div class="tag">Selected work</div>
       <div>
-        <h2>Software that connects equipment to operators</h2>
-        <p>Three industrial systems I built at Sylfen, my PLC and instrumentation work, plus one personal web project. Screenshots are from the original projects.</p>
+        <h2>Web apps I have built</h2>
+        <p>My current e-commerce project, the first version of my online store, and three web and data applications I built at Sylfen. Screenshots are from the original projects.</p>
       </div>
     </div>
+
+    <!-- Current project -->
+    <article class="project current">
+      <div class="p-top">
+        <div>
+          <div class="tag">MOK-SHOP · Full-stack e-commerce</div>
+          <h3>Mokeh Shop – E-commerce Platform</h3>
+          <span class="badge"><i aria-hidden="true"></i>In progress</span>
+        </div>
+        <div class="p-meta">Mokeh LLC, Illinois<br>Oct 2026 – Present</div>
+      </div>
+      <p class="p-sum">A complete online store for a cake and edible-image business, built from scratch: catalog, cart, online payment, customer accounts, custom orders and an admin area.</p>
+      <div class="p-body">
+        <div>
+          <h4>Storefront</h4>
+          <ul>
+            <li>Product catalog and product pages built with Next.js (App Router), React and TypeScript.</li>
+            <li>Persistent shopping cart and pickup-date selection, designed mobile-first with Tailwind CSS.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Back-end &amp; payments</h4>
+          <ul>
+            <li>PostgreSQL data model with Prisma: products, orders and custom requests.</li>
+            <li>Prices checked on the server, never trusted from the browser.</li>
+            <li>Stripe Checkout and webhooks to record paid orders and send confirmation emails.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Accounts &amp; admin</h4>
+          <ul>
+            <li>Customer accounts with Auth.js and an order history.</li>
+            <li>Custom cake orders with image upload.</li>
+            <li>Admin area to manage products and order status.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>Stripe</span><span>Auth.js</span><span>Vercel</span><span>Jira · Scrum</span></div>
+    </article>
+
+    <!-- Store v1 -->
+    <article class="project">
+      <div class="p-top">
+        <div>
+          <div class="tag">WEB-01 · Front-end · Live</div>
+          <h3>EdibleImageMokeh – Online Store v1</h3>
+        </div>
+        <div class="p-meta">My business<br>2026</div>
+      </div>
+      <p class="p-sum">The first version of my online store, designed, coded and published by me in plain HTML, CSS and JavaScript, with no framework. The Mokeh Shop project above is rebuilding it as a full-stack app.</p>
+      <div class="p-body">
+        <div>
+          <h4>Design</h4>
+          <ul>
+            <li>Planned the pages around how customers order: catalog first, prices visible, questions answered.</li>
+            <li>Responsive layout for phones, where most customers shop.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Build</h4>
+          <ul>
+            <li>Product catalog (cake sheets, round cakes, mini prints, custom shapes) with pricing tiers.</li>
+            <li>Shopping cart written in vanilla JavaScript.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Content &amp; launch</h4>
+          <ul>
+            <li>Photo gallery, testimonials and FAQ.</li>
+            <li>Published and maintained on GitHub Pages.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive design</span><span>Git</span><span>GitHub Pages</span></div>
+      <a class="live-link" href="https://helene0995.github.io/EdibleImageMokeh/" target="_blank" rel="noopener"><i aria-hidden="true"></i>helene0995.github.io/EdibleImageMokeh ↗</a>
+    </article>
 
     <!-- Project 1 -->
     <article class="project">
       <div class="p-top">
         <div>
-          <div class="tag">SYL-SUP · Full-stack web</div>
-          <h3>Industrial Supervision Platform</h3>
+          <div class="tag">SYL-WEB · Full-stack web app</div>
+          <h3>Real-Time Monitoring Web App</h3>
         </div>
         <div class="p-meta">Sylfen, France<br>2020 – 2024</div>
       </div>
-      <p class="p-sum">A modular web application, hosted on internal servers, that lets operators monitor live equipment values and control an energy system from the browser.</p>
+      <p class="p-sum">A modular full-stack web application that shows live values from an energy system in the browser and lets the team control it. I worked on it from the first wireframe to production and maintained it for four years.</p>
       <div class="p-body">
         <div>
-          <h4>The challenge</h4>
-          <ul>
-            <li>Plant operators needed one reliable screen to watch and steer a complex industrial process.</li>
-            <li>Data came from industrial controllers in real time, not from a typical web API.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>What I did</h4>
+          <h4>Design</h4>
           <ul>
             <li>Joined architecture and technology-choice meetings and helped plan the schedule.</li>
-            <li>Designed module screens in Visio, then built them in Node.js, Express and EJS.</li>
-            <li>Streamed live values to the browser with Socket.io over OPC UA data.</li>
-            <li>Wrote integration tests, deployed, and trained operators.</li>
+            <li>Designed every module screen as a wireframe first, then built it in Agile iterations.</li>
           </ul>
         </div>
         <div>
-          <h4>Result</h4>
+          <h4>Build</h4>
           <ul>
-            <li>Became the daily tool operators used to supervise the system.</li>
-            <li>I maintained it through 2024, adding, updating and removing modules as the installation changed.</li>
+            <li>Server and routes in Node.js and Express, pages in EJS and Bootstrap.</li>
+            <li>Live values pushed to the browser with Socket.io, so screens update without reloading.</li>
+            <li>PostgreSQL for settings and history.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ship &amp; maintain</h4>
+          <ul>
+            <li>Wrote integration tests, deployed the app and trained its users.</li>
+            <li>Became the team's daily tool; I added, updated and removed modules as needs changed.</li>
           </ul>
         </div>
       </div>
-      <div class="stack"><span>Node.js</span><span>Express</span><span>JavaScript</span><span>EJS</span><span>Socket.io</span><span>OPC UA</span><span>PostgreSQL</span><span>Bootstrap</span><span>Git / GitLab</span><span>Agile</span></div>
+      <div class="stack"><span>Node.js</span><span>Express</span><span>JavaScript</span><span>EJS</span><span>Bootstrap</span><span>Socket.io</span><span>PostgreSQL</span><span>Git / GitLab</span><span>Agile</span></div>
       <div class="shots">
         <figure>
-          <img src="eau-process.jpg" alt="Water process module of the supervision application, showing pumps, valves, flow rates and temperatures in a process diagram" loading="lazy">
-          <figcaption><span class="mono">LIVE APP</span>Water-process module: operators pick a module and see the process diagram with live equipment values.</figcaption>
+          <img src="img/eau-process.jpg" alt="Water process module of the supervision application, showing pumps, valves, flow rates and temperatures in a process diagram" loading="lazy">
+          <figcaption><span class="mono">LIVE APP</span>One module of the app: users pick a module and see its diagram with values updating live.</figcaption>
         </figure>
         <figure>
-          <img src="stack-x.jpg" alt="Visio mockup of a stack settings screen with 25 cells, raw and converted values, validity status, inhibition buttons and alarm thresholds" loading="lazy">
-          <figcaption><span class="mono">WIREFRAME</span>My Visio design for the stack settings screen: measurements, data validity, cell inhibition and four alarm thresholds.</figcaption>
+          <img src="img/stack-x.jpg" alt="Visio mockup of a stack settings screen with 25 cells, raw and converted values, validity status, inhibition buttons and alarm thresholds" loading="lazy">
+          <figcaption><span class="mono">WIREFRAME</span>My wireframe for a settings screen: measurements, data validity, on/off controls and alert thresholds.</figcaption>
         </figure>
       </div>
     </article>
@@ -271,18 +337,18 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
     <article class="project">
       <div class="p-top">
         <div>
-          <div class="tag">SYL-PV · Data &amp; visualization</div>
-          <h3>Solar Monitoring &amp; Forecasting Dashboard</h3>
+          <div class="tag">SYL-DASH · Data dashboard</div>
+          <h3>Solar Production Dashboard</h3>
         </div>
         <div class="p-meta">Sylfen, France<br>2022 – 2024</div>
       </div>
-      <p class="p-sum">A Python dashboard that tracks a client's photovoltaic production and compares it with power estimates built from weather forecasts.</p>
+      <p class="p-sum">A web dashboard that shows a client's solar production and compares it with what the weather forecast predicted.</p>
       <div class="p-body">
         <div>
           <h4>Collect</h4>
           <ul>
-            <li>Connected to the client's remote server by IP and read production data over Modbus TCP/IP.</li>
-            <li>Stored it in InfluxDB, a time-series database, with a daily archive on our internal server.</li>
+            <li>Pulled production data from the client's remote server automatically.</li>
+            <li>Stored it in InfluxDB, a time-series database, with a daily archive.</li>
           </ul>
         </div>
         <div>
@@ -301,14 +367,14 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
           </ul>
         </div>
       </div>
-      <div class="stack"><span>Python</span><span>pandas</span><span>Streamlit</span><span>Matplotlib</span><span>InfluxDB</span><span>Modbus TCP/IP</span><span>GitLab</span></div>
+      <div class="stack"><span>Python</span><span>pandas</span><span>Streamlit</span><span>Matplotlib</span><span>InfluxDB</span><span>GitLab</span></div>
       <div class="shots">
         <figure>
-          <img src="weather.jpg" alt="Two line charts of cloud cover and temperature forecasts for the next four hours, March 8 to 12, 2022" loading="lazy">
+          <img src="img/weather.jpg" alt="Two line charts of cloud cover and temperature forecasts for the next four hours, March 8 to 12, 2022" loading="lazy">
           <figcaption><span class="mono">MAR 2022</span>Cloud-cover and temperature forecasts for the next 4 hours, used as model inputs.</figcaption>
         </figure>
         <figure>
-          <img src="solar.jpg" alt="Charts comparing measured solar power with calculated maximum power, with and without weather correction" loading="lazy">
+          <img src="img/solar.jpg" alt="Charts comparing measured solar power with calculated maximum power, with and without weather correction" loading="lazy">
           <figcaption><span class="mono">MAR 2022</span>Measured PV power (blue) against calculated power, without and with the weather correction.</figcaption>
         </figure>
       </div>
@@ -318,103 +384,43 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
     <article class="project">
       <div class="p-top">
         <div>
-          <div class="tag">SYL-BAT · Backend &amp; real-time</div>
-          <h3>Battery Charge-Cycle Test Software</h3>
+          <div class="tag">SYL-RT · Back-end &amp; real-time</div>
+          <h3>Battery Test App with Live View</h3>
         </div>
         <div class="p-meta">Sylfen, France<br>2024</div>
       </div>
-      <p class="p-sum">Backend software that tested charge and discharge cycles so the team could validate which battery type to use in its energy system.</p>
+      <p class="p-sum">A back-end with a live web view that ran battery charge and discharge tests, so the team could choose the right battery for its product.</p>
       <div class="p-body">
         <div>
-          <h4>Connect</h4>
-          <ul><li>Talked directly to the battery over Modbus TCP/IP and read its data registers.</li></ul>
+          <h4>Back-end</h4>
+          <ul><li>Python service that read the battery's data during each test cycle.</li></ul>
         </div>
         <div>
-          <h4>Store</h4>
-          <ul><li>Processed the readings and stored each test cycle in PostgreSQL for later analysis.</li></ul>
+          <h4>Database</h4>
+          <ul><li>Stored every test cycle in PostgreSQL for later analysis.</li></ul>
         </div>
         <div>
-          <h4>Display</h4>
-          <ul><li>Built a real-time table with Socket.io so engineers could follow the battery during a test.</li></ul>
+          <h4>Live view</h4>
+          <ul><li>Real-time table in the browser with Socket.io, so engineers could follow a test as it ran.</li></ul>
         </div>
       </div>
-      <div class="stack"><span>Python</span><span>Modbus TCP/IP</span><span>Socket.io</span><span>PostgreSQL</span><span>Jupyter</span><span>Git</span></div>
+      <div class="stack"><span>Python</span><span>Socket.io</span><span>PostgreSQL</span><span>Jupyter</span><span>Git</span></div>
     </article>
 
-    <!-- Project 4 -->
-    <article class="project">
-      <div class="p-top">
-        <div>
-          <div class="tag">SYL-PLC · PLC &amp; instrumentation</div>
-          <h3>PLC Tags &amp; Instrumentation</h3>
-        </div>
-        <div class="p-meta">Sylfen, France<br>2022 – 2024</div>
-      </div>
-      <p class="p-sum">The link between the field equipment and the software: PLC variables in Beckhoff TwinCAT 3 and the database that maps every signal to its code.</p>
-      <div class="p-body">
-        <div>
-          <h4>PLC programming</h4>
-          <ul>
-            <li>Worked in Beckhoff TwinCAT 3 with Structured Text (IEC 61131-3).</li>
-            <li>Added, modified and removed PLC tags and global variables (GVL).</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Instrumentation</h4>
-          <ul>
-            <li>Maintained the instrumentation database linking equipment signals to PLC code.</li>
-            <li>Checked tag states during monitoring and testing.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Communication tests</h4>
-          <ul>
-            <li>Tested device communication over Modbus with Ultimate Modbus and pyModSlave.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="stack"><span>Beckhoff TwinCAT 3</span><span>Structured Text</span><span>IEC 61131-3</span><span>GVL</span><span>Modbus</span><span>Ultimate Modbus</span><span>pyModSlave</span></div>
-    </article>
-
-    <div class="single">
-      <article class="project">
-        <div class="p-top">
-          <div>
-            <div class="tag">WEB-01 · Personal project</div>
-            <h3>EdibleImageMokeh</h3>
-          </div>
-          <div class="p-meta">My business<br>2026</div>
-        </div>
-        <p class="p-sum">The online store for my own edible-image business, designed, coded and published by me.</p>
-        <div class="p-body">
-          <div>
-            <h4>What I built</h4>
-            <ul>
-              <li>Product catalog: cake sheets, round cakes, mini prints and custom shapes, with pricing tiers.</li>
-              <li>Photo gallery, testimonials and FAQ.</li>
-              <li>A shopping cart written in vanilla JavaScript.</li>
-              <li>Responsive layout for phones, where most customers order.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span></div>
-        <a class="live-link" href="https://helene0995.github.io/EdibleImageMokeh/" target="_blank" rel="noopener"><i aria-hidden="true"></i>helene0995.github.io/EdibleImageMokeh ↗</a>
-      </article>
-    </div>
   </section>
 
   <section id="skills">
     <div class="sec-head">
       <div class="tag">Toolkit</div>
-      <div><h2>Technical skills</h2><p>Tools I have used in production on industrial projects.</p></div>
+      <div><h2>Technical skills</h2><p>The web stack I used in production at Sylfen, plus the modern tools of my current project.</p></div>
     </div>
     <div class="skills">
-      <div><h3>PLC &amp; automation</h3><ul><li>Beckhoff TwinCAT 3</li><li>Structured Text (IEC 61131-3)</li><li>PLC tags &amp; global variables (GVL)</li><li>Instrumentation database</li></ul></div>
-      <div><h3>Industrial communication</h3><ul><li>Modbus TCP/IP (registers)</li><li>OPC UA</li><li>Ultimate Modbus · pyModSlave</li><li>Real-time streaming (Socket.io)</li></ul></div>
-      <div><h3>Programming</h3><ul><li>Python</li><li>JavaScript (ES6+)</li><li>SQL · PHP</li><li>HTML5 · CSS3</li></ul></div>
-      <div><h3>Supervision &amp; HMI</h3><ul><li>Process diagrams &amp; live values</li><li>Alarms &amp; thresholds</li><li>Visio wireframes</li><li>EJS · Bootstrap</li></ul></div>
-      <div><h3>Data &amp; databases</h3><ul><li>pandas · Jupyter · Streamlit</li><li>InfluxDB (time series)</li><li>PostgreSQL · MySQL</li><li>Data cleaning &amp; validation</li></ul></div>
-      <div><h3>Back-end &amp; workflow</h3><ul><li>Node.js · Express · REST APIs</li><li>Git · GitLab · GitHub</li><li>Agile · Jira · Notion</li><li>Linux · Windows · VS Code</li></ul></div>
+      <div><h3>Front-end</h3><ul><li>React · Next.js (App Router)</li><li>TypeScript · JavaScript (ES6+)</li><li>Tailwind CSS · Bootstrap · HTML5 · CSS3</li><li>Responsive, mobile-first design</li></ul></div>
+      <div><h3>Back-end &amp; APIs</h3><ul><li>Node.js · Express</li><li>REST APIs · Postman</li><li>Next.js API routes &amp; Server Actions</li><li>Python · PHP</li></ul></div>
+      <div><h3>Real-time &amp; data</h3><ul><li>Socket.io live updates</li><li>Dashboards &amp; charts</li><li>pandas · Streamlit</li><li>Data cleaning &amp; validation</li></ul></div>
+      <div><h3>Databases</h3><ul><li>PostgreSQL · Prisma</li><li>MySQL · SQL</li><li>InfluxDB (time series)</li><li>Data modeling</li></ul></div>
+      <div><h3>E-commerce &amp; UI design</h3><ul><li>Stripe Checkout &amp; webhooks</li><li>Auth.js · Cloudinary</li><li>Wireframes in Figma &amp; Visio</li><li>EJS templates</li></ul></div>
+      <div><h3>Workflow &amp; quality</h3><ul><li>Git · GitHub · GitLab</li><li>Jira · Agile/Scrum · Notion</li><li>Integration testing · Vercel</li><li>Linux · Windows · VS Code</li></ul></div>
     </div>
   </section>
 
@@ -425,19 +431,24 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
     </div>
     <ol class="timeline" reversed>
       <li>
+        <div class="when">Oct 2026 – Present</div>
+        <div><h3>Full-Stack Web Developer</h3><div class="org">Mokeh LLC · Yorkville, IL</div>
+        <p>Building the company's e-commerce platform from scratch with Next.js, React, TypeScript, PostgreSQL and Stripe, managed in Jira with a Scrum plan.</p></div>
+      </li>
+      <li>
         <div class="when">2022 – 2024</div>
         <div><h3>Software Developer</h3><div class="org">Sylfen · France</div>
-        <p>Built the solar monitoring dashboard and the battery test software in Python, worked on PLC tags in Beckhoff TwinCAT 3, maintained the instrumentation database, and kept maintaining the supervision platform.</p></div>
+        <p>Built a solar production dashboard and a battery test app with a live web view, and kept improving and maintaining the team's real-time web application.</p></div>
       </li>
       <li>
         <div class="when">Oct 2020 – 2022</div>
         <div><h3>JavaScript Web Developer</h3><div class="org">Sylfen · France</div>
-        <p>Designed, built, tested and deployed the industrial supervision web application, and trained its operators.</p></div>
+        <p>Designed, built, tested and deployed a full-stack real-time web application (Node.js, Express, Socket.io, PostgreSQL), and trained its users.</p></div>
       </li>
       <li>
         <div class="when">Feb – Jul 2020</div>
         <div><h3>Web Developer Intern</h3><div class="org">Sylfen · Grenoble, France</div>
-        <p>Contributed to the feasibility study for the supervision app: component wireframes and first coded screens.</p></div>
+        <p>Contributed to the feasibility study for the web app: component wireframes and the first coded screens in Node.js and Express.</p></div>
       </li>
       <li>
         <div class="when">Jun – Aug 2019</div>
@@ -474,8 +485,8 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
   <div class="contact" id="contact">
     <div>
       <div class="tag" style="color:var(--live)">Contact</div>
-      <h2 style="margin-top:14px">Let's connect your equipment to the people who run it.</h2>
-      <p>I'm looking for a software developer role in industrial automation, energy or IIoT, on-site around Chicago, hybrid or remote.</p>
+      <h2 style="margin-top:14px">Let's build software people use every day.</h2>
+      <p>I'm looking for a full-stack web developer role, on-site around Chicago, hybrid or remote.</p>
     </div>
     <div class="c-list">
       <div class="c-row"><div><small>Email</small><span id="em">helenemogoumken@gmail.com</span></div><button class="copy" type="button" data-copy="em">Copy</button></div>
@@ -484,7 +495,7 @@ footer{padding-block:0 40px;color:var(--muted);font-size:13px;display:flex;justi
     </div>
   </div>
 
-  <footer><span>Helene Mogoum · Software Developer, Industrial &amp; Energy Systems</span><span>Yorkville, Illinois</span></footer>
+  <footer><span>Helene Mogoum · Full-Stack Web Developer</span><span>Yorkville, Illinois</span></footer>
 </main>
 
 <script>
@@ -495,6 +506,3 @@ document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
   try{navigator.clipboard.writeText(el.textContent).then(done,fallback)}catch(e){fallback()}
 }));
 </script>
-
-</body>
-</html>
